@@ -32,3 +32,5 @@ Route::post('ping', function(Request $request){
 
     event(new UserEvent($user, $message));
 });
+
+Route::get('send-mail', 'MailController@index');

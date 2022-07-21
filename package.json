@@ -11,6 +11,7 @@
     },
     "devDependencies": {
         "@nuxtjs/laravel-echo": "^1.1.0",
+        "@types/socket.io-client": "^3.0.0",
         "axios": "^0.19",
         "bootstrap": "^4.6.2",
         "cross-env": "^7.0",
@@ -29,6 +30,6 @@
         "laravel": "^0.0.1",
         "laravel-echo": "^1.12.1",
         "pusher-js": "^7.2.0",
-        "socket.io-client": "^4.5.1"
+        "socket.io-client": "^2.3.0"
     }
 }

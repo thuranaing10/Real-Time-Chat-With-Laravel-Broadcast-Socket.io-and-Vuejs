@@ -36,7 +36,7 @@ class UserEvent implements ShouldBroadcast
     public function broadcastOn()
     {
         // return new PrivateChannel('user.'.$this->user->id);
-        return new Channel('user.'.$this->user->id);
+        return new PrivateChannel('user.'.$this->user->id);
         // return new Channel('user-channel');
     }
 

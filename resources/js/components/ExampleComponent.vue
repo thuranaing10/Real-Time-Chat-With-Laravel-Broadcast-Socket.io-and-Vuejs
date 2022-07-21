@@ -31,8 +31,8 @@
         mounted() {
             console.log('Component mounted.');
 
-            let channel = Echo.channel('user.' + this.id);
-            channel.listen('.UserEvent', function(data){
+            let channel = Echo.private('user.' + this.id);
+            channel.listen('UserEvent', function(data){
                 // console.log(data);
                 alert(data.message);
             });
